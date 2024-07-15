@@ -3,7 +3,14 @@
   "name": "SAT Chrome Extension",
   "version": "0.0",
   "description": "SAT Chrome Extension gives users tools like test center search automation, resources for studying, and SAT score reveal dramatization.",
-  "permissions": [],
+  "host_permissions": [
+    "https://mysat.collegeboard.org/",
+    "https://satsuite.collegeboard.org/sat/scores"
+  ]
+  "permissions": [
+    "scripting",
+    "notifications",
+  ],
   "action": {
      "default_popup": "popup.html"
    }
