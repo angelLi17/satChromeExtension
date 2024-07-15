@@ -11,6 +11,14 @@ var opt = {
           { title: "Item3", message: "This is item 3."}]
 }
 
+const US = true;
+const type = "SAT";
+const date = answerContainer.querySelector('date');
+const zip = answerContainer.querySelector('zip'); //not sure if answercontainer contains strings or what
+const range = answerContainer.querySelector('distance');
+
 for() {
+  document.querySelector("test-center-location-option-US").click;
+  if (date.value==)
   chrome.notifications.create(opt);
 }
