@@ -16,10 +16,4 @@
   "action": {
      "default_popup": "popup.html"
    }
-  "content_scripts": [
-    {
-      "matches": ["https://mysat.collegeboard.org/*"],
-      "js": ["content.js"]
-    }
-  ]
 }

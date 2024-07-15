@@ -10,6 +10,20 @@
     <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org and toggle this script.</p>
 
     <div id="answer-container" style="display: none;">
+        <button id="US">US</button> 
+       <!-- no international option right now  -->
+
+         <label for="date">Test date:</label>
+           <select id="date">
+               <option value="Option 1">August</option>
+               <option value="Option 2">October</option>
+               <option value="Option 3">November</option>
+               <option value="Option 4">December</option>
+              <option value="Option 5">March</option>
+              <option value="Option 6">May</option>
+              <option value="Option 7">June</option>
+           </select>
+       
         <label for="distances">Distance:</label>
         <select id="distances">
             <option value="Option 1">10 miles</option>
@@ -18,7 +32,7 @@
             <option value="Option 4">100 miles</option>
         </select>
        
-        <label for="zip">Zip code:</label>
+        <label for="zip">Zip Code:</label>
         <textarea id="zip" rows="4" cols="50"></textarea>
 
        <label for="notif">Notification:</label>
