@@ -1,19 +1,35 @@
-<html>
- <head>
-   <title>SAT Chrome Extension</title>
- </head>
- <body>
-     <!-- <img src="./stay_hydrated.png" id="hydrateImage">
-     <button id="On" value="1">Test Center Search On</button>
-     <button id="Off" value="0">Test Center Search Off</button>
-     <button id="resource" value="2">SAT Study Resources</button> -->
-    <input type = "text" value="Zip Code" />
-    <select>
-       <option value = "Option 1">10 miles</option>
-       <option value = "Option 2">25 miles</option>
-       <option value = "Option 3">50 miles</option>
-       <option value = "Option 4">100 miles</option>
-    </select>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Chrome Extension Popup</title>
+</head>
+<body>
+    <h1>SAT Chrome Extension</h1>
+    <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org and toggle this script.</p>
+
+    <div id="answer-container" style="display: none;">
+        <label for="distances">Distance:</label>
+        <select id="distances">
+            <option value="Option 1">10 miles</option>
+            <option value="Option 2">25 miles</option>
+            <option value="Option 3">50 miles</option>
+            <option value="Option 4">100 miles</option>
+        </select>
+       
+        <label for="zip">Zip code:</label>
+        <textarea id="zip" rows="4" cols="50"></textarea>
+
+       <label for="notif">Notification:</label>
+         <select id="notif">
+             <option value="Option 1">Computer notification</option>
+             <option value="Option 2">Computer notification + sound playing</option>
+         </select>
+    </div>
+   
+    <button id="On">Search Script On</button>
+    <button id="Off">Search Script Off</button>
    <script src="popup.js"></script>
- </body>
+</body>
 </html>
