@@ -5,6 +5,10 @@ document.querySelector('#On').addEventListener('click', function() {
     targetOn=true;
     const answerContainer = [document.querySelector('#date'),document.querySelector('#distance'),document.querySelector('#zip')];
     //code to call contentscript
+    chrome.scripting.RegisteredContentScript(
+      js: "contentscript.js",
+      runAt: "document_idle"
+    );
     //code to give answerContainer to it
   
     chrome.storage.local.set({ answerContainer : answerContainer });
