@@ -1,5 +1,5 @@
-import { toggleOn } from 'popup.js';
-import { answerContainer } from 'popup.js';
+window.toggleOn = toggleOn;
+window.answerContainer = answerContainer;
 
 const US = true;
 const type = "SAT";
@@ -48,9 +48,7 @@ if (date && zip && distance) {
   console.error('Element not found');
 }
 
-setInterval(function () {
-  search();
-}, 10);
+setInterval(search(), 300000);
 
 function search() {
     document.querySelector('#qc-id-selectdatecenter-testcenter-domestic-button-search').click;
@@ -66,5 +64,5 @@ function search() {
 
       chrome.notifications.create(opt);
     }
-  if (toggleOn==false) break;
+  if (toggleOn==false) clearInterval();
 }

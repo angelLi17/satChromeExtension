@@ -13,10 +13,15 @@
     "sidePanel",
     "storage",
     "background",
-    "favicon",
-    "chrome.audio"
+    "favicon"
   ],
   "action": {
      "default_popup": "popup.html"
    }
+  "content_scripts": [
+    {
+      "matches": ["https://mysat.collegeboard.org/*"],
+      "js": ["contentscript.js"] 
+    }
+  ]
 }
