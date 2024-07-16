@@ -3,18 +3,13 @@ import { answerContainer } from 'popup.js';
 
 const US = true;
 const type = "SAT";
-const date = answerContainer.querySelector('#date');
-const zip = answerContainer.querySelector('#zip'); //not sure if answercontainer contains strings or what
-const range = answerContainer.querySelector('#distance');
+const date = answerContainer[0];
+const distance = answerContainer[1];
+const zip = answerContainer[2];
 
-if (date && zip && range) {
-  const value = element.value; 
-} else {
-  console.error('Element not found');
-}
-
+if (date && zip && distance) {
   document.querySelector("#test-center-location-option-US").click;
-  
+
   if (date.value=='Option 1') {
     document.querySelector('body [id^="qc-id-selectdatecenter-testdate-button-AUG"]').click;
   } else if (date.value=='Option 2') {
@@ -32,21 +27,26 @@ if (date && zip && range) {
   } 
 
   document.querySelector('#qc-id-selectdatecenter-testcenter-label-searchtestcenter').click;
-  
+
   document.querySelector('[value="zipSearch"]').value = zip.value; //does .value work
-  
+
   document.querySelector('[aria-search="qc-id-selectdatecenter-testcenter-label-searchtestcenter"').click;
-  
-  if (range.value=='Option 1') {
+
+  if  distance.value=='Option 1') {
     document.querySelector('value="10"').click;
-  } else if (range.value=='Option 2') {
+  } else if  distance.value=='Option 2') {
     document.querySelector('value="25"').click;
-  } else if (range.value=='Option 3') {
+  } else if  distance.value=='Option 3') {
     document.querySelector('value="50"').click;
-  } else if (range.value=='Option 4') {
+  } else if  distance.value=='Option 4') {
     document.querySelector('value="100"').click;
   }
   document.querySelector('#qc-id-selectdatecenter-testcenter-toggle-showavailableonly').click;
+
+  search();
+} else {
+  console.error('Element not found');
+}
 
 setInterval(function () {
   search();
@@ -54,14 +54,12 @@ setInterval(function () {
 
 function search() {
     document.querySelector('#qc-id-selectdatecenter-testcenter-domestic-button-search').click;
-
-    //const myNodeList = document.querySelectorAll('[class="distance"]');
     const first = document.querySelector('#qc-id-test-center-name');
     if (first) {
       var opt = {
         type: "list",
         title: "Test Center(s) Available!!",
-        message: "Register ASAP before seats fill up.",
+        message: "Register ASAP before seat(s) fill up.",
         //iconUrl: "url_to_small_icon",
         items: [{ title: document.querySelector('#qc-id-test-center-name').value, message: document.querySelector('[class="distance"]'.value) }]
       }
