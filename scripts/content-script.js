@@ -48,18 +48,25 @@ if (date && zip && range) {
   }
   document.querySelector('#qc-id-selectdatecenter-testcenter-toggle-showavailableonly').click;
 
-function draw() {
+setInterval(function () {
+  search();
+}, 10);
+
+function search() {
     document.querySelector('#qc-id-selectdatecenter-testcenter-domestic-button-search').click;
 
     //const myNodeList = document.querySelectorAll('[class="distance"]');
-    var opt = {
-      type: "list",
-      title: "Test Center(s) Available!!",
-      message: "Register ASAP before seats fill up.",
-      //iconUrl: "url_to_small_icon",
-      items: [{ title: document.querySelector('#qc-id-test-center-name'.value, message: document.querySelector('[class="distance"]'.value }]
-    }
+    const first = document.querySelector('#qc-id-test-center-name');
+    if (first) {
+      var opt = {
+        type: "list",
+        title: "Test Center(s) Available!!",
+        message: "Register ASAP before seats fill up.",
+        //iconUrl: "url_to_small_icon",
+        items: [{ title: document.querySelector('#qc-id-test-center-name').value, message: document.querySelector('[class="distance"]'.value) }]
+      }
 
-    chrome.notifications.create(opt);
+      chrome.notifications.create(opt);
+    }
   if (toggleOn==false) break;
 }
