@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAT*&amp; is a chrome extension made for students in the US (currently not integrated to perform international search) who are taking this CollegeBoard standardized test. The SAT is an important test which many universities use to determine college-readiness and academic excellence. However, because of high demand and lower test centers in certain areas, this extension aims to provide a solution to students who are looking for a seat nearby. This extension automates SAT test center search and sends live notifications when there is a seat available.">
     <title>SAT*&</title>
-    <desc>SAT*& is a chrome extension made for students in the US (currently not integrated to perform international search) who are taking CollegeBoard's standardized test. The SAT is an important test which many universities use to determine college-readiness and academic excellence. However, because of high demand and lower test centers in certain areas, this extension aims to provide a solution to students who are looking for a seat nearby. This extension automates SAT test center search and sends live notifications when there is a seat available.</desc>
 </head>
 <body>
     
@@ -17,43 +18,47 @@
     <img class="title" src="assets/logoT.png" alt="Brand logo reading the name, SAT*&amp;">
     <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org, go to the registration page and proceed until you arrive at the page where you choose the center, and toggle this script.</p>
 
-    <div id="answerContainer">
-        <button id="US">US</button> 
-       <!-- no international option right now  -->
+    <form action="/process.php">
+        <input name="us" type="radio" id="us">
+        <label for="us">US</label><br>
+    
+        <input name="date" type="radio" id="aug">
+        <label for="aug">AUG</label>
+        <input name="date" type="radio" id="oct">
+        <label for="oct">OCT</label>
+        <input name="date" type="radio" id="nov">
+        <label for="nov">NOV</label>
+        <input name="date" type="radio" id="dec">
+        <label for="dec">DEC</label>
+        <input name="date" type="radio" id="mar">
+        <label for="mar">MAR</label>
+        <input name="date" type="radio" id="may">
+        <label for="may">MAY</label>
+        <input name="date" type="radio" id="jun">
+        <label for="jun">JUN</label><br>
+    
+        <input name="distances" type="radio" id="10">
+        <label for="10">10</label>
+        <input name="distances" type="radio" id="25">
+        <label for="25">25</label>
+        <input name="distances" type="radio" id="50">
+        <label for="50">50</label>
+        <input name="distances" type="radio" id="100">
+        <label for="100">100</label><br>
+        
+        <input name="zip" type="number" id="zip">
+        <label for="zip">Zip Code:</label><br>
+d
+        <input name="notif" type="radio" id="1">
+        <label for="1">Computer Notification</label>
+        <input name="notif" type="radio" id="2">
+        <label for="2">Computer notification + sound</label><br>
+    
+        <input name="end" id="On" type="submit" value="Start Search">
+        <input name="end" id="Off" type="reset" value="Reset">
+    </form>
 
-         <label for="date">Test date:</label>
-           <select id="date">
-               <option value="Option 1">August</option>
-               <option value="Option 2">October</option>
-               <option value="Option 3">November</option>
-               <option value="Option 4">December</option>
-              <option value="Option 5">March</option>
-              <option value="Option 6">May</option>
-              <option value="Option 7">June</option>
-           </select>
-       
-        <label for="distances">Distance:</label>
-        <select id="distances">
-            <option value="Option 1">10 miles</option>
-            <option value="Option 2">25 miles</option>
-            <option value="Option 3">50 miles</option>
-            <option value="Option 4">100 miles</option>
-        </select>
-       
-        <label for="zip">Zip Code:</label>
-        <textarea id="zip" rows="4" cols="50"></textarea>
-
-       <label for="notif">Notification:</label>
-         <select id="notif">
-             <option value="Option 1">Computer notification</option>
-             <option value="Option 2">Computer notification + sound playing</option>
-         </select>
-    </div>
-   <!--issue with all of my dropdowns and etc -->
-    <button id="On">Search Script On</button>
-    <button id="Off">Search Script Off</button>
-
-    <p></p><em>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.</em></p>
+    <p><em>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.</em></p>
    <script src="popup.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const answerContainer = await browser.storage.local.get("answerContainer");
+const answerContainer = await chrome.storage.local.get("answerContainer");
 
 const US = true;
 const type = "SAT";

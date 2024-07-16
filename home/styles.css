@@ -21,3 +21,6 @@ a {
 #answerContainer {
   
 }
+label {
+  cursor: default;
+}

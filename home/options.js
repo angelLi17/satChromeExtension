@@ -10,7 +10,7 @@ document.querySelector('On').addEventListener('click', function() {
       runAt: "document_idle"
     );
     //code to give answerContainer to it
-    browser.storage.local.set({ answerContainer : answerContainer });
+    chrome.storage.local.set({ answerContainer : answerContainer });
   }
 });
 

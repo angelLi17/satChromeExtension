@@ -16,16 +16,15 @@
     "favicon"
   ],
   "background": {
-    "service_worker": "background.js",
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
   "action": {
      
-   }
+  },
   "content_scripts": [
     {
       "matches": ["https://mysat.collegeboard.org/*"],
-      "js": ["contentscript.js"] 
+      "js": ["scripts/contentscript.js"] 
     }
   ]
 }
