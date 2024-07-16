@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAT Chrome Extension Popup</title>
+    <title>SAT*&</title>
+    <desc>SAT*& is a chrome extension made for students in the US (currently not integrated to perform international search) who are taking CollegeBoard's standardized test. The SAT is an important test which many universities use to determine college-readiness and academic excellence. However, because of high demand and lower test centers in certain areas, this extension aims to provide a solution to students who are looking for a seat nearby. This extension automates SAT test center search and sends live notifications when there is a seat available.</desc>
 </head>
 <body>
-    <h1>SAT Chrome Extension</h1>
+    
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html">Resources</a></li>
+      <li><a href="/index.html">Test Center Search</a></li>
+      <li><a href="https://github.com/angelLi17/satChromeExtension">Source Code</a></li>
+    </ul>
+    <img class="title" src="assets/logoT.png" alt="Brand logo reading the name, SAT*&amp;">
     <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org, go to the registration page and proceed until you arrive at the page where you choose the center, and toggle this script.</p>
 
-    <div id="answer-container" style="display: none;">
+    <div id="answerContainer">
         <button id="US">US</button> 
        <!-- no international option right now  -->
 
@@ -44,6 +52,8 @@
    <!--issue with all of my dropdowns and etc -->
     <button id="On">Search Script On</button>
     <button id="Off">Search Script Off</button>
+
+    <p></p><em>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.</em></p>
    <script src="popup.js"></script>
 </body>
 </html>
