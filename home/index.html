@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SAT*&amp; is a chrome extension made for students in the US (currently not integrated to perform international search) who are taking this CollegeBoard standardized test. The SAT is an important test which many universities use to determine college-readiness and academic excellence. However, because of high demand and lower test centers in certain areas, this extension aims to provide a solution to students who are looking for a seat nearby. This extension automates SAT test center search and sends live notifications when there is a seat available.">
     <title>SAT*&</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
@@ -15,10 +16,11 @@
       <li><a href="/index.html">Test Center Search</a></li>
       <li><a href="https://github.com/angelLi17/satChromeExtension">Source Code</a></li>
     </ul>
-    <img class="title" src="assets/logoT.png" alt="Brand logo reading the name, SAT*&amp;">
+    
+    <img src="/logoT.png" alt="Brand logo reading the name, SAT*&amp;" class="logo">
     <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org, go to the registration page and proceed until you arrive at the page where you choose the center, and toggle this script.</p>
 
-    <form action="/process.php">
+    <form action="/process.php" method="GET" class="search">
         <input name="us" type="radio" id="us">
         <label for="us">US</label><br>
     
@@ -46,9 +48,9 @@
         <input name="distances" type="radio" id="100">
         <label for="100">100</label><br>
         
-        <input name="zip" type="number" id="zip">
-        <label for="zip">Zip Code:</label><br>
-d
+        <label for="zip">Zip Code:</label>
+        <input name="zip" type="number" id="zip"><br>
+
         <input name="notif" type="radio" id="1">
         <label for="1">Computer Notification</label>
         <input name="notif" type="radio" id="2">

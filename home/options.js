@@ -14,9 +14,6 @@ document.querySelector('On').addEventListener('click', function() {
   }
 });
 
-window.answerContainer = answerContainer; 
-window.toggleOn = toggleOn;
-
 document.querySelector('Off').addEventListener('click', function() {
   toggleOn=false;
 });

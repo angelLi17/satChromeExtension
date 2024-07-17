@@ -1,5 +1,11 @@
-.title {
-  width: 300px;
+body {
+  margin: 25px;
+  padding: 25px;
+  background-color: gray;
+}
+
+.logo {
+  width: 5000px;
   margin: 25px;
   /* float: left; */
 }
@@ -11,16 +17,19 @@ ul {
 li {
   float: left;
 }
+
 a {
   display: block;
   padding: 8px;
   background-color: #ffffff;
   color: #000000;
-  text-align: center;
 }
 #answerContainer {
-  
+  background-color: ;
 }
 label {
   cursor: default;
+}
+.search {
+
 }
