@@ -13,4 +13,12 @@ It is currently in its early mvp stage; later updates will include resources for
 ## Contributions
 Feel free to make any pull requests to fix bugs, add new features, or revise existing code.
 
+## UI/UX
+Color Palette:
+- light blue #00a9e7
+- dark blue #0035de
+- black #000000
+- white #ffffff
+- dark gray #1e1e1e
+
 Disclaimer: SAT*& is not sponsored or affiliated with CollegeBoard SAT®. Copyright (c) 2024 Angel Li
