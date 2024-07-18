@@ -21,4 +21,6 @@ Color Palette:
 - white #ffffff
 - dark gray #1e1e1e
 
+Canva Mockup: https://satand.my.canva.site/
+
 Disclaimer: SAT*& is not sponsored or affiliated with CollegeBoard SAT®. Copyright (c) 2024 Angel Li
