@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAT*&amp; is a chrome extension made for students in the US (currently not integrated to perform international search) who are taking this CollegeBoard standardized test. The SAT is an important test which many universities use to determine college-readiness and academic excellence. However, because of high demand and lower test centers in certain areas, this extension aims to provide a solution to students who are looking for a seat nearby. This extension automates SAT test center search and sends live notifications when there is a seat available.">
+    <title>SAT*&</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="/process.php" method="GET" class="search">
+        <input name="us" type="radio" id="us">
+        <label for="us">US</label><br>
+
+        <input name="date" type="radio" id="aug">
+        <label for="aug">AUG</label>
+        <input name="date" type="radio" id="oct">
+        <label for="oct">OCT</label>
+        <input name="date" type="radio" id="nov">
+        <label for="nov">NOV</label>
+        <input name="date" type="radio" id="dec">
+        <label for="dec">DEC</label>
+        <input name="date" type="radio" id="mar">
+        <label for="mar">MAR</label>
+        <input name="date" type="radio" id="may">
+        <label for="may">MAY</label>
+        <input name="date" type="radio" id="jun">
+        <label for="jun">JUN</label><br>
+
+        <input name="distances" type="radio" id="10">
+        <label for="10">10</label>
+        <input name="distances" type="radio" id="25">
+        <label for="25">25</label>
+        <input name="distances" type="radio" id="50">
+        <label for="50">50</label>
+        <input name="distances" type="radio" id="100">
+        <label for="100">100</label><br>
+
+        <label for="zip">Zip Code:</label>
+        <input name="zip" type="number" id="zip"><br>
+
+        <input name="notif" type="radio" id="1">
+        <label for="1">Computer Notification</label>
+        <input name="notif" type="radio" id="2">
+        <label for="2">Computer notification + sound</label><br>
+
+        <input name="end" id="On" type="submit" value="Start Search">
+        <input name="end" id="Off" type="reset" value="Reset">
+    </form>
+
+</body>
+</html>

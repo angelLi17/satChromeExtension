@@ -9,60 +9,74 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
+    <!--nav-bar-->
+    <div class="nav-bar">
+      <div class="h3">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html">Resources</a></li>
+          <li><a href="/index.html">Test Center Search</a></li>
+          <li><a href="https://github.com/angelLi17/satChromeExtension">Source Code</a></li>
+        </ul>
+      </div>
+      <div class="favicon">
+        <a href="/index.html"><img src="https://pbs.twimg.com/profile_images/826105112011665408/zCyFRC8I_400x400.jpg" class="favicon"></a>
+      </div>
+      <div class="redirect">
+        <a href="https://github.com/angelLi17/satChromeExtension/">Github</a>
+      </div>
+    </div>
     
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/index.html">Resources</a></li>
-      <li><a href="/index.html">Test Center Search</a></li>
-      <li><a href="https://github.com/angelLi17/satChromeExtension">Source Code</a></li>
-    </ul>
+    <!--home1-->
+    <div class="home1">
+      <div class="image1">
+        <!--need to figure out how to crop shape-->
+        <img src="/logoT.png" alt="Brand logo reading the name, SAT*&amp;" class="logo">
+      </div>
+      <div class="image2">
+        <img src="https://cdn-icons-png.flaticon.com/512/59/59720.png" class="star1">
+        <img src="https://cdn-icons-png.flaticon.com/512/59/59720.png" class="star2">
+        <img src="https://cdn-icons-png.flaticon.com/512/59/59720.png" class="star3">
+      </div>
+      <div class="heading1">
+        <h1>Heading One-Text Hereeeee</h1>
+      </div>
+    </div>
     
-    <div class="notnav">
-    <img src="/logoT.png" alt="Brand logo reading the name, SAT*&amp;" class="logo">
-    <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org, go to the registration page and proceed until you arrive at the page where you choose the center, and toggle this script.</p>
-
-    <form action="/process.php" method="GET" class="search">
-        <input name="us" type="radio" id="us">
-        <label for="us">US</label><br>
+    <!--home2-->
+    <div class="home2">
+      <div class="h2left">
+        <div class="desc">
+          <p>This tool can help you search for available test centers. Login to mysat.collegeboard.org, go to the registration page and proceed until you arrive at the page where you choose the center, and toggle this script.</p>
+        </div>
+      </div>
+      <div class="h2right">
+        <div class="image3">
+          <!--figure out how to do image-->
+        </div>
+      </div>
+    </div>
     
-        <input name="date" type="radio" id="aug">
-        <label for="aug">AUG</label>
-        <input name="date" type="radio" id="oct">
-        <label for="oct">OCT</label>
-        <input name="date" type="radio" id="nov">
-        <label for="nov">NOV</label>
-        <input name="date" type="radio" id="dec">
-        <label for="dec">DEC</label>
-        <input name="date" type="radio" id="mar">
-        <label for="mar">MAR</label>
-        <input name="date" type="radio" id="may">
-        <label for="may">MAY</label>
-        <input name="date" type="radio" id="jun">
-        <label for="jun">JUN</label><br>
+    <!--home3-->
+    <div class="home3">
+      <div class="text">
+        <h1>Heading 1..text here;aksjdkf;l</h1>
+        <h2>Heading 2...text herea;skdfj</h2>
+      </div>
+      <div class="image4">
+        <!--figure out how to do image-->
+      </div>
+    </div>
     
-        <input name="distances" type="radio" id="10">
-        <label for="10">10</label>
-        <input name="distances" type="radio" id="25">
-        <label for="25">25</label>
-        <input name="distances" type="radio" id="50">
-        <label for="50">50</label>
-        <input name="distances" type="radio" id="100">
-        <label for="100">100</label><br>
-        
-        <label for="zip">Zip Code:</label>
-        <input name="zip" type="number" id="zip"><br>
-
-        <input name="notif" type="radio" id="1">
-        <label for="1">Computer Notification</label>
-        <input name="notif" type="radio" id="2">
-        <label for="2">Computer notification + sound</label><br>
+    <!--footer-->
+    <div class="footer">
+      <div class="text2">
+        <h3>Copyright Angel Li 2024</h3>
+        <h4><em>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.</em></h4>
+      </div>
+    </div>
     
-        <input name="end" id="On" type="submit" value="Start Search">
-        <input name="end" id="Off" type="reset" value="Reset">
-    </form>
-
-    <p><em>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product.</em></p>
-   <script src="options.js"></script>
-   </div>
+    <script src="popup.js"></script>
 </body>
 </html>
